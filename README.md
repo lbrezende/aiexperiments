@@ -4,9 +4,9 @@ Landing page de captura para o workshop imersivo de UX + IA, construida inteiram
 
 ## Preview ao Vivo
 
-**[Ver Landing Page](https://aiexperiments.vercel.app)**
+**[Ver Landing Page](https://aiexperiments-one.vercel.app)**
 
-**[Ver Fluxograma do Orquestrador](https://aiexperiments.vercel.app/orchestrator-flowchart.html)**
+**[Ver Fluxograma do Orquestrador](https://aiexperiments-one.vercel.app/orchestrator-flowchart.html)**
 
 ## Arquitetura de Agentes
 
