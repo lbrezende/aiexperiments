@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orquestrador de Criativos — Agent Teams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/campaign-orchestrator.css">
+</head>
+<body>
+
+  <div class="bg-effects">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__badge">Creative Production — Agent Teams</div>
+    <h1>Orquestrador de Criativos</h1>
+    <p>6 agentes especializados produzem criativos para Instagram, YouTube, emails e WhatsApp com baixo custo de aquisicao.</p>
+  </header>
+
+  <main class="flowchart">
+
+    <!-- ORCHESTRATOR -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background:rgba(124,58,237,0.2);color:#a78bfa;">0</span>
+      <span class="phase-label__text" style="color:#a78bfa;">Orquestrador</span>
+      <span class="phase-label__mode">Briefing + Estrategia</span>
+    </div>
+    <div class="single-grid">
+      <div class="agent-node agent-node--orchestrator">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F9E0;</div>
+          <div><div class="agent-node__title">Orquestrador de Criativos</div><div class="agent-node__role">Claude Opus 4.6 — Creative Director</div></div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li>Recebe briefing do produto, promessa e publico-alvo</li>
+          <li>Define matriz de canais: Instagram, YouTube, Email, WhatsApp</li>
+          <li>Distribui tarefas para agentes especializados</li>
+          <li>Garante consistencia de mensagem entre todos os canais</li>
+          <li>Otimiza para menor CAC (custo de aquisicao)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="connection connection--default">
+      <div class="connection__line"></div><div class="connection__arrow"></div>
+      <div class="connection__label">Briefing + Brand Guidelines &darr;</div>
+    </div>
+
+    <!-- PHASE 1: STRATEGY + COPY (PARALLEL) -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background:rgba(79,70,229,0.15);color:#818cf8;">1</span>
+      <span class="phase-label__text" style="color:#818cf8;">Fase 1 — Estrategia + Copy</span>
+      <span class="phase-label__mode">&#x26A1; Paralelo</span>
+    </div>
+    <div class="parallel-grid">
+      <div class="agent-node agent-node--strategist">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F3AF;</div>
+          <div><div class="agent-node__title">Media Strategist</div><div class="agent-node__role">Planejamento de Midia + CAC</div></div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li><strong>Canais:</strong> Instagram Feed/Stories/Reels + YouTube Discovery</li>
+          <li><strong>Formatos:</strong> 4:5 portrait (1080x1350) para Instagram</li>
+          <li><strong>Audiencias:</strong> UX designers, product designers, UI designers</li>
+          <li><strong>Hooks:</strong> 3 angulos de ataque por criativo</li>
+          <li><strong>Budget:</strong> Distribuicao otimizada por canal</li>
+        </ul>
+      </div>
+      <div class="agent-node agent-node--copywriter">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x270D;&#xFE0F;</div>
+          <div><div class="agent-node__title">Copywriter</div><div class="agent-node__role">Copy Persuasivo + Reguas</div></div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li><strong>Headlines:</strong> 6 variacoes de headline para criativos</li>
+          <li><strong>CTAs:</strong> "Quero Participar", "Garantir Minha Vaga"</li>
+          <li><strong>Emails:</strong> Regua de 5 emails (D0 a D5)</li>
+          <li><strong>WhatsApp:</strong> 5 mensagens de engajamento</li>
+          <li><strong>Descricoes:</strong> Copy para Instagram + YouTube</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="connection connection--default">
+      <div class="connection__line"></div><div class="connection__arrow"></div>
+      <div class="connection__label">Estrategia + Copy aprovados &darr;</div>
+    </div>
+
+    <!-- PHASE 2: VISUAL PRODUCTION (PARALLEL) -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background:rgba(236,72,153,0.15);color:#f472b6;">2</span>
+      <span class="phase-label__text" style="color:#f472b6;">Fase 2 — Producao Visual</span>
+      <span class="phase-label__mode">&#x26A1; Paralelo</span>
+    </div>
+    <div class="parallel-grid">
+      <div class="agent-node agent-node--designer">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F3A8;</div>
+          <div><div class="agent-node__title">Visual Designer</div><div class="agent-node__role">Figma + Criativos Estaticos</div></div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li><strong>6 criativos:</strong> Instagram feed (1080x1350, 4:5)</li>
+          <li><strong>Backgrounds:</strong> Gradientes AI unicos, nao pasteurizados</li>
+          <li><strong>Overlays:</strong> Mesh, linhas, orbs, grids, dots</li>
+          <li><strong>Tipografia:</strong> Space Grotesk bold + gradientes</li>
+          <li><strong>CTAs visuais:</strong> Botoes com gradiente azul/roxo</li>
+        </ul>
+      </div>
+      <div class="agent-node agent-node--video">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F3AC;</div>
+          <div><div class="agent-node__title">Video Scriptwriter</div><div class="agent-node__role">Roteiros YouTube + Reels</div></div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li><strong>YouTube:</strong> 2 roteiros (60s pre-roll + 3min discovery)</li>
+          <li><strong>Reels:</strong> 2 roteiros (15s hook + 30s storytelling)</li>
+          <li><strong>Hooks:</strong> Primeiros 3-5 segundos otimizados</li>
+          <li><strong>Beats:</strong> Estrutura por segundo com direcao visual</li>
+          <li><strong>CTAs finais:</strong> Alinhados com landing page</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="connection connection--pink">
+      <div class="connection__line"></div><div class="connection__arrow"></div>
+      <div class="connection__label">Criativos + Roteiros prontos &darr;</div>
+    </div>
+
+    <!-- PHASE 3: DISTRIBUTION -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background:rgba(16,185,129,0.15);color:#34d399;">3</span>
+      <span class="phase-label__text" style="color:#34d399;">Fase 3 — Distribuicao</span>
+      <span class="phase-label__mode">&#x23F3; Sequencial</span>
+    </div>
+    <div class="single-grid">
+      <div class="agent-node agent-node--distribution">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F4E1;</div>
+          <div><div class="agent-node__title">Distribution Manager</div><div class="agent-node__role">Empacotamento + Entrega</div></div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li><strong>Hub:</strong> Pagina unica com abas navegaveis (criativos, emails, whatsapp, descricoes, videos)</li>
+          <li><strong>Criativos:</strong> Repositorio visual com preview de cada peca</li>
+          <li><strong>Copy:</strong> Textos prontos para copiar em cada canal</li>
+          <li><strong>Reguas:</strong> Sequencias temporais de email e WhatsApp</li>
+          <li><strong>Deploy:</strong> Tudo publicado e acessivel por link</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="connection connection--green">
+      <div class="connection__line"></div><div class="connection__arrow"></div>
+      <div class="connection__label">Campanha empacotada &darr;</div>
+    </div>
+
+    <!-- PHASE 4: REVIEW -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background:rgba(139,92,246,0.15);color:#a78bfa;">4</span>
+      <span class="phase-label__text" style="color:#a78bfa;">Fase 4 — Review</span>
+      <span class="phase-label__mode">&#x2705; Validacao</span>
+    </div>
+    <div class="single-grid">
+      <div class="agent-node agent-node--review">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F50D;</div>
+          <div><div class="agent-node__title">Quality Review</div><div class="agent-node__role">Consistencia + Otimizacao</div></div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li>Consistencia de mensagem entre todos os canais</li>
+          <li>Headlines alinhadas com promessa da landing page</li>
+          <li>CTAs direcionando para URL correta</li>
+          <li>Reguas de email e WhatsApp com timing correto</li>
+          <li>Criativos dentro das specs de cada plataforma</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- LEGEND -->
+    <div class="legend">
+      <div class="legend__title">Agentes e Papeis</div>
+      <div class="legend__grid">
+        <div class="legend__item"><div class="legend__dot legend__dot--orchestrator"></div><div><div class="legend__label">Orquestrador</div><div class="legend__desc">Direcao criativa e coordenacao</div></div></div>
+        <div class="legend__item"><div class="legend__dot legend__dot--strategist"></div><div><div class="legend__label">Media Strategist</div><div class="legend__desc">Canais, formatos, audiencias, CAC</div></div></div>
+        <div class="legend__item"><div class="legend__dot legend__dot--copywriter"></div><div><div class="legend__label">Copywriter</div><div class="legend__desc">Headlines, emails, WhatsApp, descricoes</div></div></div>
+        <div class="legend__item"><div class="legend__dot legend__dot--designer"></div><div><div class="legend__label">Visual Designer</div><div class="legend__desc">Criativos estaticos para Instagram</div></div></div>
+        <div class="legend__item"><div class="legend__dot legend__dot--video"></div><div><div class="legend__label">Video Scriptwriter</div><div class="legend__desc">Roteiros YouTube e Reels</div></div></div>
+        <div class="legend__item"><div class="legend__dot legend__dot--distribution"></div><div><div class="legend__label">Distribution Manager</div><div class="legend__desc">Empacotamento e entrega final</div></div></div>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

@@ -4,13 +4,19 @@ Landing page de captura para o workshop imersivo de UX + IA, construida inteiram
 
 ## Preview ao Vivo
 
+### Landing Page
 **[Ver Landing Page](https://aiexperiments-one.vercel.app)**
 
-**[Ver Fluxograma do Orquestrador](https://aiexperiments-one.vercel.app/orchestrator-flowchart.html)**
+**[Ver Fluxograma do Orquestrador (Landing Page)](https://aiexperiments-one.vercel.app/orchestrator-flowchart.html)**
+
+### Campanha de Criativos
+**[Ver Hub de Campanhas](https://aiexperiments-one.vercel.app/campaigns.html)** — Criativos, emails, WhatsApp, descricoes e roteiros
+
+**[Ver Orquestrador de Criativos](https://aiexperiments-one.vercel.app/campaign-orchestrator.html)** — Fluxograma dos 6 agentes de producao
 
 ## Arquitetura de Agentes
 
-Este projeto foi construido por 4 agentes especializados, gerenciados por um orquestrador (Claude Opus 4.6):
+### Orquestrador 1 — Landing Page (4 agentes)
 
 | Fase | Agente | Modo | Output |
 |------|--------|------|--------|
@@ -19,6 +25,17 @@ Este projeto foi construido por 4 agentes especializados, gerenciados por um orq
 | 2 | Visual Designer | Sequencial | Paleta, tipografia, glassmorphism, animacoes |
 | 3 | Front-end Dev | Sequencial | `index.html` + `css/style.css` |
 | 4 | Review | Orquestrador | Validacao de coerencia |
+
+### Orquestrador 2 — Producao de Criativos (6 agentes)
+
+| Fase | Agente | Modo | Output |
+|------|--------|------|--------|
+| 1 | Media Strategist | Paralelo | Canais, formatos, audiencias, CAC |
+| 1 | Copywriter | Paralelo | Headlines, emails, WhatsApp, descricoes |
+| 2 | Visual Designer | Paralelo | 6 criativos Instagram (1080x1350) |
+| 2 | Video Scriptwriter | Paralelo | Roteiros YouTube + Reels |
+| 3 | Distribution Manager | Sequencial | Hub de campanhas com abas |
+| 4 | Quality Review | Orquestrador | Consistencia entre canais |
 
 ## Stack
 
@@ -31,13 +48,17 @@ Este projeto foi construido por 4 agentes especializados, gerenciados por um orq
 ## Arquivos
 
 ```
-├── index.html                  # Landing page
-├── orchestrator-flowchart.html # Fluxograma visual dos agentes
-├── shaping-doc.md              # Processo de shaping do UX Designer
+├── index.html                    # Landing page
+├── orchestrator-flowchart.html   # Fluxograma dos agentes (landing page)
+├── campaigns.html                # Hub de campanhas com abas
+├── campaign-orchestrator.html    # Fluxograma dos agentes (criativos)
+├── shaping-doc.md                # Processo de shaping do UX Designer
 ├── css/
-│   ├── style.css               # Estilos da landing page
-│   └── flowchart.css           # Estilos do fluxograma
-└── images/                     # Placeholders para imagens
+│   ├── style.css                 # Estilos da landing page
+│   ├── flowchart.css             # Estilos do fluxograma (landing page)
+│   ├── campaigns.css             # Estilos do hub de campanhas
+│   └── campaign-orchestrator.css # Estilos do fluxograma (criativos)
+└── images/                       # Placeholders para imagens
 ```
 
 ## Sobre
