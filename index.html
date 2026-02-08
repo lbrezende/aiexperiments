@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Workshop ao vivo: crie seu portfolio completo de UX com IA em um fim de semana. Do zero ao portfolio pronto para novas vagas.">
+  <title>Workshop Portfolio de IA e UX na Pratica — Leandro Rezende</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <div class="bg-effects">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+    <div class="bg-orb bg-orb--4"></div>
+  </div>
+  <div class="bg-grid"></div>
+
+  <!-- ===================================================
+       SECTION 1: HERO / CAPTURE
+       =================================================== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__grid">
+
+        <!-- Left: Content -->
+        <div class="hero__content">
+          <div class="hero__badge">Workshop ao vivo — Vagas limitadas</div>
+
+          <h1>
+            <span class="gradient-text">Crie Seu Portfolio Completo de UX com IA</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Do zero. Ao vivo. Em um fim de semana.
+          </p>
+
+          <p class="hero__promise">
+            Leve tudo pra casa para aplicar em novas vagas cobrando mais que hoje. No domingo, as 18h, voce sai com o portfolio atualizado e pronto para iniciar sua transicao de carreira.
+          </p>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-number">1.500+</div>
+              <div class="hero__stat-label">Alunos transformados</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-number">R$ 32M+</div>
+              <div class="hero__stat-label">Em aumento salarial</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-number">Top 5</div>
+              <div class="hero__stat-label">UX Masters NNg Brasil</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Capture Form -->
+        <div class="hero__form-card">
+          <h2 class="hero__form-title">Garanta Sua Vaga</h2>
+          <p class="hero__form-sub">Preencha abaixo e receba o acesso ao workshop</p>
+
+          <form class="capture-form" id="capture-form-hero" action="#" method="POST">
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              placeholder="Seu nome completo"
+              required
+              autocomplete="name"
+            >
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              placeholder="Seu melhor e-mail"
+              required
+              autocomplete="email"
+            >
+            <input
+              class="form-input"
+              type="tel"
+              name="whatsapp"
+              placeholder="WhatsApp com DDD"
+              required
+              autocomplete="tel"
+            >
+            <button class="btn-cta" type="submit">
+              Quero Participar
+            </button>
+            <p class="form-disclaimer">
+              Seus dados estao seguros. Nao enviamos spam.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 2: WHAT YOU'LL BUILD
+       =================================================== -->
+  <section class="build" id="build">
+    <div class="container">
+      <div class="section-badge section-badge--cyan">Mao na massa real</div>
+      <h2 class="section-title">O que voce vai construir no workshop</h2>
+      <p class="section-subtitle">
+        Voce vai sentar, abrir as ferramentas e construir. No final do domingo, sai com o portfolio atualizado e pronto para usar.
+      </p>
+
+      <div class="build__grid">
+        <!-- Figma -->
+        <div class="glass-card tool-card">
+          <div class="tool-card__icon tool-card__icon--figma">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 24c2.2 0 4-1.8 4-4v-4H8c-2.2 0-4 1.8-4 4s1.8 4 4 4z" fill="#0ACF83"/><path d="M4 12c0-2.2 1.8-4 4-4h4v8H8c-2.2 0-4-1.8-4-4z" fill="#A259FF"/><path d="M4 4c0-2.2 1.8-4 4-4h4v8H8C5.8 8 4 6.2 4 4z" fill="#F24E1E"/><path d="M12 0h4c2.2 0 4 1.8 4 4s-1.8 4-4 4h-4V0z" fill="#FF7262"/><path d="M20 12c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4z" fill="#1ABCFE"/></svg>
+          </div>
+          <div class="tool-card__name">Figma</div>
+          <div class="tool-card__desc">Prototipacao e design de interfaces</div>
+        </div>
+
+        <!-- Make -->
+        <div class="glass-card tool-card">
+          <div class="tool-card__icon tool-card__icon--make">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#a78bfa" stroke-width="2"/><path d="M8 12l3 3 5-6" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="tool-card__name">Make</div>
+          <div class="tool-card__desc">Automacao de fluxos com IA</div>
+        </div>
+
+        <!-- Claude Code -->
+        <div class="glass-card tool-card">
+          <div class="tool-card__icon tool-card__icon--claude">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" fill="#fbbf24" opacity="0.8"/><path d="M2 17l10 5 10-5" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12l10 5 10-5" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="tool-card__name">Claude Code</div>
+          <div class="tool-card__desc">IA para geracao e analise de conteudo</div>
+        </div>
+
+        <!-- Antigravity -->
+        <div class="glass-card tool-card">
+          <div class="tool-card__icon tool-card__icon--antigravity">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="#f472b6" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="#f472b6" stroke-width="2"/><circle cx="12" cy="12" r="9" stroke="#f472b6" stroke-width="1" opacity="0.3"/></svg>
+          </div>
+          <div class="tool-card__name">Antigravity</div>
+          <div class="tool-card__desc">Design assistido por inteligencia artificial</div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="build__timeline">
+        <div class="timeline-step">
+          <div class="timeline-step__dot"></div>
+          <span>Sabado: Fundamentos + Setup</span>
+        </div>
+        <span class="timeline-arrow">&rarr;</span>
+        <div class="timeline-step">
+          <div class="timeline-step__dot"></div>
+          <span>Domingo: Construcao intensiva</span>
+        </div>
+        <span class="timeline-arrow">&rarr;</span>
+        <div class="timeline-step">
+          <div class="timeline-step__dot"></div>
+          <span>18h: Portfolio pronto!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 3: THE PROBLEM / WHY NOW
+       =================================================== -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="section-badge section-badge--pink">Momento decisivo</div>
+      <h2 class="section-title">Voce so tem dois caminhos</h2>
+      <p class="section-subtitle">
+        Uma pessoa preparada para desenhar a experiencia do usuario hoje enfrenta uma escolha inevitavel.
+      </p>
+
+      <div class="problem__paths">
+        <!-- Path 1: Rejected -->
+        <div class="glass-card path-card path-card--rejected">
+          <div class="path-card__label">Caminho 1</div>
+          <h3 class="path-card__title">Ser rejeitado pelo mercado</h3>
+          <p class="path-card__text">
+            Ignorar a IA e continuar fazendo UX do jeito antigo. O mercado vai passar por cima de voce. Empresas ja estao buscando profissionais que entendam as duas coisas — e descartando quem nao entende.
+          </p>
+        </div>
+
+        <!-- Path 2: Empowered -->
+        <div class="glass-card path-card path-card--empowered">
+          <div class="path-card__label">Caminho 2</div>
+          <h3 class="path-card__title">Potencializar tudo com IA</h3>
+          <p class="path-card__text">
+            Aprender a aplicar IA para multiplicar tudo o que voce ja sabe. Quem tem fundamentos solidos de UX e aprende IA fica anos a frente de quem so sabe apertar botao.
+          </p>
+        </div>
+      </div>
+
+      <!-- Human First Block -->
+      <div class="problem__human-first">
+        <div class="problem__human-first-tag">Human First AI Design</div>
+        <h3>
+          <span class="gradient-text">Voce e a peca que falta no quebra-cabeca. E o humano que faz a IA realmente funcionar.</span>
+        </h3>
+        <p style="max-width: 640px; margin: 20px auto 0; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+          Durante o workshop, voce vai tentar fazer o trabalho "sozinho com IA" e vai perceber, na pratica, que nao funciona. Nao existe a menor condicao de um chefe, investidor ou cliente fazer esse trabalho sem alguem que entenda UX de verdade.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 4: BENEFITS
+       =================================================== -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="section-badge section-badge--green">Por que participar</div>
+      <h2 class="section-title">O que muda pra voce depois do workshop</h2>
+      <p class="section-subtitle">
+        Resultados praticos que voce leva pra casa e aplica na segunda-feira.
+      </p>
+
+      <div class="benefits__grid">
+        <div class="glass-card benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="benefit-card__title">Portfolio completo e pronto</div>
+          <div class="benefit-card__text">Sai do workshop com um portfolio real, atualizado e aplicavel imediatamente para vagas e freelas.</div>
+        </div>
+
+        <div class="glass-card benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="benefit-card__title">Domine ferramentas de IA</div>
+          <div class="benefit-card__text">Aprenda a usar Figma, Make, Claude Code e Antigravity juntos na pratica, nao na teoria.</div>
+        </div>
+
+        <div class="glass-card benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 7l5 5-5 5M6 7l5 5-5 5" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="benefit-card__title">Transicao de carreira acelerada</div>
+          <div class="benefit-card__text">Na segunda-feira voce ja esta pronto para buscar novas vagas ou fechar novos freelas cobrando mais.</div>
+        </div>
+
+        <div class="glass-card benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="benefit-card__title">Ganhe 10x mais, com menos</div>
+          <div class="benefit-card__text">O metodo te ensina a entregar mais qualidade e velocidade, atendendo menos clientes e investindo menos tempo.</div>
+        </div>
+
+        <div class="glass-card benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="benefit-card__title">Metodo validado por 1.500+</div>
+          <div class="benefit-card__text">Mais de 1.500 alunos ja conquistaram novas oportunidades usando exatamente esse metodo.</div>
+        </div>
+
+        <div class="glass-card benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="benefit-card__title">Reciclagem profunda</div>
+          <div class="benefit-card__text">Reforce a importancia do design de experiencia em um momento em que o mercado precisa de voce mais do que nunca.</div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="benefits__stats">
+        <div class="glass-card stat-card">
+          <div class="stat-card__number">1.500+</div>
+          <div class="stat-card__label">Alunos transformados</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-card__number">R$ 32M+</div>
+          <div class="stat-card__label">Em aumento salarial coletivo</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-card__number">100x</div>
+          <div class="stat-card__label">Multiplicacao com IA + UX</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 5: AUTHORITY
+       =================================================== -->
+  <section class="authority" id="authority">
+    <div class="container">
+      <div class="section-badge section-badge--purple">Seu instrutor</div>
+      <h2 class="section-title">Leandro Rezende</h2>
+      <p class="section-subtitle">
+        Um dos profissionais mais reconhecidos em UX no Brasil, agora na fronteira da IA.
+      </p>
+
+      <div class="authority__grid">
+        <!-- Photo placeholder -->
+        <div class="authority__photo">
+          <span style="position: relative; z-index: 1;">
+            Foto do Leandro Rezende<br><br>
+            <em style="font-size: 0.7rem;">Sugestao de imagem: retrato profissional com iluminacao lateral, fundo escuro com elementos sutis de IA/neon</em>
+          </span>
+        </div>
+
+        <!-- Info -->
+        <div class="authority__info">
+          <h3>Leandro Rezende</h3>
+          <div class="authority__role">UX Master &bull; Human First AI Design</div>
+
+          <div class="authority__badges">
+            <span class="authority__badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke="#a78bfa" stroke-width="2"/></svg>
+              Top 5 UX Masters — Nielsen Norman Group Brasil
+            </span>
+            <span class="authority__badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#a78bfa" stroke-width="2"/></svg>
+              Baseado no Canada
+            </span>
+          </div>
+
+          <p class="authority__text">
+            Leandro trabalha com design e experiencia do usuario ha muitos anos. Ja ajudou mais de 1.500 pessoas a conquistarem, juntas, mais de R$ 32 milhoes em aumento de salario anual.
+          </p>
+
+          <p class="authority__text">
+            Agora, com a chegada da inteligencia artificial, ele criou este workshop para reciclar sua base de alunos — e novos profissionais — para que extraiam ainda mais valor de tudo o que ja aprenderam e cheguem mais longe.
+          </p>
+
+          <blockquote class="authority__quote">
+            "Nao existe a menor condicao de um chefe, investidor ou cliente fazer esse trabalho sem alguem que entenda UX de verdade. Voce e a peca que falta."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 6: WORKSHOP DETAILS
+       =================================================== -->
+  <section class="details" id="details">
+    <div class="container">
+      <div class="section-badge section-badge--amber">O que esta incluso</div>
+      <h2 class="section-title">Tudo que voce precisa em um fim de semana</h2>
+      <p class="section-subtitle">
+        Um workshop nerd, tecnico, pratico e diferente de tudo o que voce ja viu.
+      </p>
+
+      <div class="details__grid">
+        <!-- Column 1: Content -->
+        <div class="glass-card detail-card">
+          <h3 class="detail-card__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Conteudo
+          </h3>
+          <ul class="detail-card__list">
+            <li>Fundamentos de UX aplicados com IA</li>
+            <li>Pesquisa de usuario com inteligencia artificial</li>
+            <li>Prototipacao acelerada no Figma com IA</li>
+            <li>Automacao de fluxos com Make</li>
+            <li>Geracao e analise com Claude Code</li>
+            <li>Portfolio completo montado ao vivo</li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Schedule -->
+        <div class="glass-card detail-card">
+          <h3 class="detail-card__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Cronograma
+          </h3>
+          <ul class="detail-card__list">
+            <li>Sabado: Setup de ferramentas + fundamentos</li>
+            <li>Sabado: Pesquisa e definicao de projeto</li>
+            <li>Domingo: Construcao do portfolio</li>
+            <li>Domingo: Refinamento com IA</li>
+            <li>Domingo 18h: Portfolio finalizado</li>
+            <li>Segunda: Pronto para novas vagas</li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Tools -->
+        <div class="glass-card detail-card">
+          <h3 class="detail-card__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="#34d399" stroke-width="2"/></svg>
+            Ferramentas
+          </h3>
+          <ul class="detail-card__list">
+            <li>Figma (prototipacao e design)</li>
+            <li>Make (automacao de fluxos)</li>
+            <li>Claude Code (IA para conteudo)</li>
+            <li>Antigravity (design com IA)</li>
+            <li>Outras ferramentas de IA do momento</li>
+            <li>Templates e recursos exclusivos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 7: FINAL CTA
+       =================================================== -->
+  <section class="final-cta" id="inscricao">
+    <div class="container">
+      <div class="section-badge section-badge--purple">Ultima chance</div>
+      <h2 class="section-title">
+        <span class="gradient-text">Sua carreira nao pode esperar</span>
+      </h2>
+      <p class="section-subtitle" style="margin: 0 auto;">
+        O mercado esta mudando agora. Quem se preparar primeiro, colhe primeiro.
+      </p>
+
+      <div class="final-cta__card">
+        <div class="final-cta__urgency">Vagas limitadas — Workshop ao vivo</div>
+
+        <form class="capture-form" id="capture-form-final" action="#" method="POST">
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            placeholder="Seu nome completo"
+            required
+            autocomplete="name"
+          >
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="Seu melhor e-mail"
+            required
+            autocomplete="email"
+          >
+          <input
+            class="form-input"
+            type="tel"
+            name="whatsapp"
+            placeholder="WhatsApp com DDD"
+            required
+            autocomplete="tel"
+          >
+          <button class="btn-cta" type="submit">
+            Quero Participar do Workshop
+          </button>
+          <p class="form-disclaimer">
+            Seus dados estao seguros. Nao enviamos spam.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SECTION 8: FOOTER
+       =================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">Workshop IA + UX &bull; Leandro Rezende</div>
+        <nav class="footer__links">
+          <a href="#hero" class="footer__link">Inicio</a>
+          <a href="#build" class="footer__link">Workshop</a>
+          <a href="#benefits" class="footer__link">Beneficios</a>
+          <a href="#inscricao" class="footer__link">Inscreva-se</a>
+        </nav>
+      </div>
+      <p class="footer__copy">
+        &copy; 2025 Leandro Rezende. Todos os direitos reservados. Este site nao e afiliado a Nielsen Norman Group.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

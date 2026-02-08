@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orquestrador de Agentes — Claude Opus 4.6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/flowchart.css">
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <div class="bg-effects">
+    <div class="bg-orb bg-orb--purple"></div>
+    <div class="bg-orb bg-orb--cyan"></div>
+    <div class="bg-orb bg-orb--pink"></div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header__badge">Agent Teams — Claude Opus 4.6</div>
+    <h1>Orquestrador de Agentes</h1>
+    <p>Como 4 agentes especializados colaboram para construir a landing page perfeita, gerenciados pelo Opus 4.6.</p>
+  </header>
+
+  <!-- Flowchart -->
+  <main class="flowchart">
+
+    <!-- ===== ORCHESTRATOR NODE ===== -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background: rgba(124,58,237,0.2); color: #a78bfa;">0</span>
+      <span class="phase-label__text" style="color: #a78bfa;">Orquestrador</span>
+      <span class="phase-label__mode">Decompor + Gerenciar</span>
+    </div>
+
+    <div class="single-grid">
+      <div class="agent-node agent-node--orchestrator">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F9E0;</div>
+          <div>
+            <div class="agent-node__title">Orquestrador Principal</div>
+            <div class="agent-node__role">Claude Opus 4.6 — Agent Teams</div>
+          </div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li>Recebe o briefing completo do produto</li>
+          <li>Decompoe a tarefa em subtarefas independentes</li>
+          <li>Identifica dependencias entre agentes</li>
+          <li>Lanca agentes em paralelo quando possivel</li>
+          <li>Gerencia o fluxo e valida outputs</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Connection: Orchestrator → Phase 1 -->
+    <div class="connection">
+      <div class="connection__line"></div>
+      <div class="connection__arrow"></div>
+      <div class="connection__label">Briefing + Requirements &darr;</div>
+    </div>
+
+    <!-- ===== PHASE 1: PARALLEL ===== -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background: rgba(6,182,212,0.15); color: #22d3ee;">1</span>
+      <span class="phase-label__text" style="color: #22d3ee;">Fase 1 — Fundacao</span>
+      <span class="phase-label__mode">&#x26A1; Paralelo</span>
+    </div>
+
+    <div class="parallel-grid">
+      <!-- UX Designer -->
+      <div class="agent-node agent-node--ux">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F3AF;</div>
+          <div>
+            <div class="agent-node__title">UX Designer</div>
+            <div class="agent-node__role">Arquitetura de Informacao + Shaping</div>
+          </div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li><strong>Frame:</strong> Define problema e outcome</li>
+          <li><strong>Requirements:</strong> R0-R10 do que a pagina precisa</li>
+          <li><strong>Shapes:</strong> 3 opcoes de layout (A, B, C)</li>
+          <li><strong>Fit Check:</strong> Matriz decisoria R x S</li>
+          <li><strong>Breadboard:</strong> Affordances UI + wiring</li>
+          <li><strong>Output:</strong> shaping-doc.md completo</li>
+        </ul>
+      </div>
+
+      <!-- Copywriter -->
+      <div class="agent-node agent-node--copy">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x270D;&#xFE0F;</div>
+          <div>
+            <div class="agent-node__title">Copywriter</div>
+            <div class="agent-node__role">Persuasao + Narrativa de Venda</div>
+          </div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li><strong>Headline:</strong> "Crie Seu Portfolio Completo de UX com IA"</li>
+          <li><strong>Subtitulo:</strong> "Do zero. Ao vivo. Em um fim de semana."</li>
+          <li><strong>Narrativa:</strong> 2 caminhos + Human First AI Design</li>
+          <li><strong>Beneficios:</strong> 6 bullets com dados concretos</li>
+          <li><strong>Autoridade:</strong> Bio + credenciais NNg</li>
+          <li><strong>CTAs:</strong> "Quero Participar" + urgencia</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Connection: Phase 1 → Phase 2 -->
+    <div class="connection connection--merge">
+      <div class="connection__line"></div>
+      <div class="connection__arrow"></div>
+      <div class="connection__label">Estrutura (UX) + Conteudo (Copy) &darr;</div>
+    </div>
+
+    <!-- ===== PHASE 2: SEQUENTIAL ===== -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background: rgba(236,72,153,0.15); color: #f472b6;">2</span>
+      <span class="phase-label__text" style="color: #f472b6;">Fase 2 — Design Visual</span>
+      <span class="phase-label__mode">&#x23F3; Sequencial</span>
+    </div>
+
+    <div class="single-grid">
+      <div class="agent-node agent-node--visual">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F3A8;</div>
+          <div>
+            <div class="agent-node__title">Visual Designer</div>
+            <div class="agent-node__role">Identidade Visual + UI Design</div>
+          </div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li><strong>Paleta:</strong> Dark mode (#0a0a0f) + gradientes azul/roxo</li>
+          <li><strong>Tipografia:</strong> Space Grotesk (headings) + Inter (body)</li>
+          <li><strong>Componentes:</strong> Glassmorphism cards, CTAs animados</li>
+          <li><strong>Animacoes:</strong> Float, shimmer, pulse, gradient-shift</li>
+          <li><strong>Imagens:</strong> Prompts para geracao AI de cada visual</li>
+          <li><strong>Spacing:</strong> Sistema de 8px grid, hierarquia visual</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Connection: Phase 2 → Phase 3 -->
+    <div class="connection connection--build">
+      <div class="connection__line"></div>
+      <div class="connection__arrow"></div>
+      <div class="connection__label">Design System completo &darr;</div>
+    </div>
+
+    <!-- ===== PHASE 3: SEQUENTIAL ===== -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background: rgba(16,185,129,0.15); color: #34d399;">3</span>
+      <span class="phase-label__text" style="color: #34d399;">Fase 3 — Implementacao</span>
+      <span class="phase-label__mode">&#x23F3; Sequencial</span>
+    </div>
+
+    <div class="single-grid">
+      <div class="agent-node agent-node--dev">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F4BB;</div>
+          <div>
+            <div class="agent-node__title">Front-end Developer</div>
+            <div class="agent-node__role">HTML5 + CSS3 + Responsividade</div>
+          </div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li><strong>CSS:</strong> Design tokens, reset, componentes, animacoes (~800 linhas)</li>
+          <li><strong>HTML:</strong> 8 secoes semanticas com formularios (~450 linhas)</li>
+          <li><strong>Responsivo:</strong> Breakpoints 480, 768, 1024, 1200px</li>
+          <li><strong>Forms:</strong> Validacao HTML5 (nome, email, whatsapp)</li>
+          <li><strong>Performance:</strong> Zero frameworks, CSS puro, preconnect fonts</li>
+          <li><strong>Output:</strong> index.html + css/style.css prontos</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Connection: Phase 3 → Phase 4 -->
+    <div class="connection connection--review">
+      <div class="connection__line"></div>
+      <div class="connection__arrow"></div>
+      <div class="connection__label">Pagina implementada &darr;</div>
+    </div>
+
+    <!-- ===== PHASE 4: REVIEW ===== -->
+    <div class="phase-label">
+      <span class="phase-label__number" style="background: rgba(139,92,246,0.15); color: #a78bfa;">4</span>
+      <span class="phase-label__text" style="color: #a78bfa;">Fase 4 — Review</span>
+      <span class="phase-label__mode">&#x2705; Validacao</span>
+    </div>
+
+    <div class="single-grid">
+      <div class="agent-node agent-node--review">
+        <div class="agent-node__header">
+          <div class="agent-node__icon">&#x1F50D;</div>
+          <div>
+            <div class="agent-node__title">Review Final</div>
+            <div class="agent-node__role">Orquestrador valida coerencia</div>
+          </div>
+        </div>
+        <ul class="agent-node__outputs">
+          <li>Verifica alinhamento entre estrutura UX e implementacao</li>
+          <li>Valida que todo conteudo do Copy esta no HTML</li>
+          <li>Confirma que design visual foi fielmente implementado</li>
+          <li>Testa responsividade em multiplos breakpoints</li>
+          <li>Verifica formularios e validacoes</li>
+          <li>Ajustes finais e entrega</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== LEGEND ===== -->
+    <div class="legend">
+      <div class="legend__title">Legenda — Agentes e Papeis</div>
+      <div class="legend__grid">
+        <div class="legend__item">
+          <div class="legend__dot legend__dot--orchestrator"></div>
+          <div>
+            <div class="legend__label">Orquestrador</div>
+            <div class="legend__desc">Claude Opus 4.6 gerencia agent teams, decompoe tarefas e identifica dependencias</div>
+          </div>
+        </div>
+        <div class="legend__item">
+          <div class="legend__dot legend__dot--ux"></div>
+          <div>
+            <div class="legend__label">UX Designer</div>
+            <div class="legend__desc">Define IA da pagina usando Shape Up: requirements, shapes, fit check, breadboard</div>
+          </div>
+        </div>
+        <div class="legend__item">
+          <div class="legend__dot legend__dot--copy"></div>
+          <div>
+            <div class="legend__label">Copywriter</div>
+            <div class="legend__desc">Cria todo conteudo persuasivo: headlines, narrativa, beneficios, CTAs, social proof</div>
+          </div>
+        </div>
+        <div class="legend__item">
+          <div class="legend__dot legend__dot--visual"></div>
+          <div>
+            <div class="legend__label">Visual Designer</div>
+            <div class="legend__desc">Define paleta, tipografia, componentes visuais, animacoes e sugestoes de imagem</div>
+          </div>
+        </div>
+        <div class="legend__item">
+          <div class="legend__dot legend__dot--dev"></div>
+          <div>
+            <div class="legend__label">Front-end Dev</div>
+            <div class="legend__desc">Implementa tudo em HTML5 + CSS3 puro, responsivo, sem frameworks</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
