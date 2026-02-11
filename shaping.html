@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaping Doc — Workshop Portfolio de IA e UX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shaping.css">
+</head>
+<body>
+
+  <div class="bg-effects">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+  </div>
+
+  <div class="container">
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="page-header">
+      <span class="page-header__tag">Shape Up Methodology</span>
+      <h1 class="page-header__title">Shaping Doc</h1>
+      <p class="page-header__subtitle">Documento gerado pelo <strong>Agente UX Designer</strong> seguindo a metodologia Shape Up (/shaping skill). Orquestrado por Claude Opus 4.6.</p>
+    </header>
+
+    <nav class="nav-links">
+      <a href="index.html">Landing Page</a>
+      <a href="orchestrator-flowchart.html">Orquestrador LP</a>
+      <a href="campaign-orchestrator.html">Orquestrador Criativos</a>
+      <a href="campaigns.html">Hub de Campanhas</a>
+    </nav>
+
+    <!-- ==================== 1. FRAME ==================== -->
+    <section class="section">
+      <span class="section__label">01 / Frame</span>
+      <h2 class="section__title">Frame</h2>
+
+      <h3 style="font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700; color: var(--text-accent); margin-bottom: 12px;">Source (Briefing Original)</h3>
+      <div class="source-block">
+        <ul>
+          <li>Workshop imersivo de fim de semana para designers de UX</li>
+          <li>Participantes criam um portfolio completo usando ferramentas de IA</li>
+          <li>Publico: UX designers que precisam se reciclar com IA</li>
+          <li>Instrutor: Leandro Rezende, UX Master reconhecido pela Nielsen Norman Group</li>
+          <li>Narrativa central: "Human First AI Design"</li>
+          <li>Resultado: No domingo as 18h, portfolio pronto para transicao de carreira</li>
+        </ul>
+      </div>
+
+      <h3 style="font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700; color: var(--text-accent); margin-bottom: 12px;">Problem</h3>
+      <div class="item-grid" style="margin-bottom: 24px;">
+        <div class="item-row">
+          <span class="item-row__id">P1</span>
+          <span class="item-row__text">Designers de UX estao sendo <strong>rejeitados pelo mercado</strong> por nao saberem usar IA</span>
+        </div>
+        <div class="item-row">
+          <span class="item-row__id">P2</span>
+          <span class="item-row__text">Empresas acham (ingenuamente) que IA substitui UX — precisamos provar o contrario</span>
+        </div>
+        <div class="item-row">
+          <span class="item-row__id">P3</span>
+          <span class="item-row__text">Profissionais de UX com fundamentos solidos nao sabem como <strong>potencializar</strong> seu trabalho com IA</span>
+        </div>
+        <div class="item-row">
+          <span class="item-row__id">P4</span>
+          <span class="item-row__text">Falta um <strong>portfolio atualizado</strong> que demonstre dominio de IA + UX para conseguir vagas melhores</span>
+        </div>
+        <div class="item-row">
+          <span class="item-row__id">P5</span>
+          <span class="item-row__text">O mercado paga mais para quem domina as duas coisas, mas falta o caminho pratico</span>
+        </div>
+      </div>
+
+      <h3 style="font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700; color: var(--text-accent); margin-bottom: 12px;">Outcome</h3>
+      <div class="item-grid">
+        <div class="item-row">
+          <span class="item-row__id item-row__id--outcome">O1</span>
+          <span class="item-row__text">Visitante qualificado se cadastra (nome + email + WhatsApp) para participar do workshop</span>
+        </div>
+        <div class="item-row">
+          <span class="item-row__id item-row__id--outcome">O2</span>
+          <span class="item-row__text">Visitante entende em &lt; 10 segundos o que e o workshop e o resultado pratico</span>
+        </div>
+        <div class="item-row">
+          <span class="item-row__id item-row__id--outcome">O3</span>
+          <span class="item-row__text">Visitante se identifica com a dor ("estou ficando para tras") e ve o workshop como solucao</span>
+        </div>
+        <div class="item-row">
+          <span class="item-row__id item-row__id--outcome">O4</span>
+          <span class="item-row__text">Taxa de conversao &gt; 15% para uma landing page de captura</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. REQUIREMENTS ==================== -->
+    <section class="section">
+      <span class="section__label">02 / Requirements</span>
+      <h2 class="section__title">Requirements</h2>
+
+      <table class="req-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Requirement</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>R0</td><td>Formulario de captura no topo da pagina (nome + email + WhatsApp)</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R1</td><td>Promessa clara e forte visivel em menos de 3 segundos (above the fold)</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R2</td><td>Explicacao objetiva do que e o workshop e o que acontece durante ele</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R3</td><td>Resultado pratico explicito: portfolio real, pronto, aplicavel imediatamente</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R4</td><td>Imagem sugestiva ao lado do formulario de captura (referencia visual AI/UX)</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R5</td><td>Beneficios destacados com dados concretos (numeros, resultados reais)</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R6</td><td>Prova de autoridade do instrutor (NNg, 1500+ alunos, R$32M em salarios)</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R7</td><td>Narrativa "Human First AI Design" — IA potencializa, nao substitui</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R8</td><td>CTA repetido no final da pagina com urgencia</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R9</td><td>Mobile-first, totalmente responsivo</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R10</td><td>Estetica moderna AI/tech (dark mode, glassmorphism, gradientes)</td><td><span class="badge badge--must">Must-have</span></td></tr>
+          <tr><td>R11</td><td>Carregamento rapido — sem frameworks pesados, HTML/CSS puro</td><td><span class="badge badge--nice">Nice-to-have</span></td></tr>
+          <tr><td>R12</td><td>Secao de FAQ ou objecoes comuns</td><td><span class="badge badge--nice">Nice-to-have</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ==================== 3. SHAPES ==================== -->
+    <section class="section">
+      <span class="section__label">03 / Shapes</span>
+      <h2 class="section__title">Shapes</h2>
+      <p class="section__subtitle">3 formas alternativas de resolver o problema. Cada shape e um layout diferente para a landing page.</p>
+
+      <div class="shapes-grid">
+        <div class="glass-card shape-card shape-card--selected">
+          <span class="shape-card__selected-badge">Selecionado</span>
+          <div class="shape-card__letter">A</div>
+          <div class="shape-card__name">Layout Linear Classico de Conversao</div>
+          <div class="shape-card__desc">Hero com formulario no topo, secoes empilhadas verticalmente, CTA final.</div>
+          <ul class="shape-card__parts">
+            <li>A1: Hero section com grid 2 colunas (copy left, form right)</li>
+            <li>A2: Secao "O que voce vai construir" com cards de ferramentas</li>
+            <li>A3: Secao narrativa "2 caminhos" com contraste visual</li>
+            <li>A4: Grid de beneficios com icones e numeros</li>
+            <li>A5: Secao de autoridade com bio + credenciais</li>
+            <li>A6: Detalhes do workshop (conteudo + cronograma)</li>
+            <li>A7: CTA final com formulario repetido</li>
+            <li>A8: Footer</li>
+          </ul>
+        </div>
+
+        <div class="glass-card shape-card">
+          <div class="shape-card__letter">B</div>
+          <div class="shape-card__name">Sidebar Fixa de Captura</div>
+          <div class="shape-card__desc">Formulario de captura fixo na lateral direita que acompanha o scroll. Conteudo principal a esquerda.</div>
+          <ul class="shape-card__parts">
+            <li>B1: Sidebar sticky com formulario (visivel em todo scroll)</li>
+            <li>B2: Conteudo principal em coluna unica a esquerda</li>
+            <li>B3: Secoes empilhadas no conteudo principal</li>
+            <li>B4: Footer full-width</li>
+          </ul>
+        </div>
+
+        <div class="glass-card shape-card">
+          <div class="shape-card__letter">C</div>
+          <div class="shape-card__name">Storytelling Progressivo</div>
+          <div class="shape-card__desc">Revelacao gradual do conteudo conforme scroll, com transicoes visuais entre secoes. Formulario aparece apenas apos a narrativa completa.</div>
+          <ul class="shape-card__parts">
+            <li>C1: Hero com apenas headline + "scroll para descobrir"</li>
+            <li>C2: Secoes com fade-in progressivo no scroll</li>
+            <li>C3: Narrativa em storytelling continuo</li>
+            <li>C4: Formulario aparece somente no final</li>
+            <li>C5: Footer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. FIT CHECK ==================== -->
+    <section class="section">
+      <span class="section__label">04 / Fit Check</span>
+      <h2 class="section__title">Fit Check</h2>
+      <p class="section__subtitle">Cada shape comparado contra todos os requirements.</p>
+
+      <div style="overflow-x: auto;">
+        <table class="fit-table">
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Shape A (Linear)</th>
+              <th>Shape B (Sidebar)</th>
+              <th>Shape C (Story)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>R0: Formulario no topo</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-fail">&#10007;</td></tr>
+            <tr><td>R1: Promessa em &lt; 3s</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-fail">&#10007;</td></tr>
+            <tr><td>R2: Explicacao objetiva</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td></tr>
+            <tr><td>R3: Resultado pratico claro</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td></tr>
+            <tr><td>R4: Imagem ao lado do form</td><td class="fit-pass">&#10003;</td><td class="fit-fail">&#10007;</td><td class="fit-fail">&#10007;</td></tr>
+            <tr><td>R5: Beneficios com dados</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td></tr>
+            <tr><td>R6: Autoridade do instrutor</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td></tr>
+            <tr><td>R7: Narrativa Human First</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td></tr>
+            <tr><td>R8: CTA repetido no final</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td></tr>
+            <tr><td>R9: Mobile-first</td><td class="fit-pass">&#10003;</td><td class="fit-fail">&#10007;</td><td class="fit-pass">&#10003;</td></tr>
+            <tr><td>R10: Estetica AI/tech</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td></tr>
+            <tr><td>R11: Carregamento rapido</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-fail">&#10007;</td></tr>
+            <tr><td>R12: FAQ</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td><td class="fit-pass">&#10003;</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <ul class="notes-list">
+        <li><strong>Shape B / R4:</strong> Sidebar ocupa o espaco da imagem. O formulario fica comprimido sem espaco para visual ao lado.</li>
+        <li><strong>Shape B / R9:</strong> Sidebar fixa nao funciona em mobile — colapsa e quebra a experiencia.</li>
+        <li><strong>Shape C / R0 e R1:</strong> O formulario so aparece no final. O visitante que chega pela primeira vez nao ve o CTA de imediato. Altissimo risco de bounce.</li>
+        <li><strong>Shape C / R11:</strong> Storytelling progressivo exige JavaScript para scroll-triggered animations, aumentando complexidade e peso.</li>
+      </ul>
+
+      <div class="decision-box">
+        <div class="decision-box__title">Decisao: Shape A selecionado</div>
+        <div class="decision-box__text">Shape A e o unico que satisfaz <strong>todos</strong> os requirements Must-have. E o padrao comprovado de maior conversao para landing pages de captura — formulario visivel imediatamente, fluxo previsivel, funciona perfeitamente em mobile.</div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. DETAIL A ==================== -->
+    <section class="section">
+      <span class="section__label">05 / Detail</span>
+      <h2 class="section__title">Detail A — Parts Expandido</h2>
+
+      <table class="afford-table">
+        <thead>
+          <tr>
+            <th>Part</th>
+            <th>Descricao</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>A1</td><td><strong>Hero:</strong> Grid 2 colunas. Esquerda: H1 + subtitulo + urgencia. Direita: formulario (nome, email, whatsapp) + CTA "Quero Participar" + imagem decorativa de fundo</td></tr>
+          <tr><td>A2</td><td><strong>O Que Vai Construir:</strong> 4 cards com ferramentas (Figma, Make, Claude Code, Antigravity) + paragrafo sobre timeline (fim de semana, domingo 18h)</td></tr>
+          <tr><td>A3</td><td><strong>Dois Caminhos:</strong> Layout com 2 blocos contrastantes: "Caminho 1: Rejeitado" (vermelho/escuro) vs "Caminho 2: Potencializado" (azul/brilhante). Texto "Human First AI Design" como destaque</td></tr>
+          <tr><td>A4</td><td><strong>Beneficios:</strong> Grid 3x2 com icone + titulo + descricao para cada beneficio. Numeros em destaque (1500+, R$32M)</td></tr>
+          <tr><td>A5</td><td><strong>Autoridade:</strong> Foto placeholder do Leandro + badge NNg + lista de credenciais + numeros de impacto</td></tr>
+          <tr><td>A6</td><td><strong>Detalhes:</strong> Lista do conteudo do workshop + cronograma visual + ferramentas utilizadas</td></tr>
+          <tr><td>A7</td><td><strong>CTA Final:</strong> Formulario completo repetido + headline de urgencia + beneficio final</td></tr>
+          <tr><td>A8</td><td><strong>Footer:</strong> Copyright + links de contato + politica de privacidade</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ==================== 6. BREADBOARD UI ==================== -->
+    <section class="section">
+      <span class="section__label">06 / Breadboard</span>
+      <h2 class="section__title">Breadboard — UI Affordances</h2>
+
+      <div style="overflow-x: auto;">
+        <table class="afford-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Affordance</th>
+              <th>Type</th>
+              <th>Place</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>U1</td><td>Headline principal</td><td>Text (H1)</td><td>Hero</td></tr>
+            <tr><td>U2</td><td>Subtitulo</td><td>Text</td><td>Hero</td></tr>
+            <tr><td>U3</td><td>Badge de urgencia</td><td>Text/visual</td><td>Hero</td></tr>
+            <tr><td>U4</td><td>Campo Nome</td><td>Input text</td><td>Hero Form</td></tr>
+            <tr><td>U5</td><td>Campo Email</td><td>Input email</td><td>Hero Form</td></tr>
+            <tr><td>U6</td><td>Campo WhatsApp</td><td>Input tel</td><td>Hero Form</td></tr>
+            <tr><td>U7</td><td>Botao "Quero Participar"</td><td>Button/submit</td><td>Hero Form</td></tr>
+            <tr><td>U8</td><td>Imagem decorativa AI</td><td>Image</td><td>Hero</td></tr>
+            <tr><td>U9</td><td>Cards de ferramentas</td><td>Card grid (4)</td><td>Construir</td></tr>
+            <tr><td>U10</td><td>Timeline do workshop</td><td>Visual/text</td><td>Construir</td></tr>
+            <tr><td>U11</td><td>Bloco "Caminho Rejeitado"</td><td>Card escuro</td><td>Dois Caminhos</td></tr>
+            <tr><td>U12</td><td>Bloco "Caminho Potencializado"</td><td>Card brilhante</td><td>Dois Caminhos</td></tr>
+            <tr><td>U13</td><td>Texto "Human First"</td><td>Headline destaque</td><td>Dois Caminhos</td></tr>
+            <tr><td>U14</td><td>Grid de beneficios</td><td>Cards (6)</td><td>Beneficios</td></tr>
+            <tr><td>U15</td><td>Numeros em destaque</td><td>Stat cards</td><td>Beneficios</td></tr>
+            <tr><td>U16</td><td>Foto do instrutor</td><td>Image placeholder</td><td>Autoridade</td></tr>
+            <tr><td>U17</td><td>Badge NNg</td><td>Visual badge</td><td>Autoridade</td></tr>
+            <tr><td>U18</td><td>Lista de credenciais</td><td>List</td><td>Autoridade</td></tr>
+            <tr><td>U19</td><td>Detalhes do conteudo</td><td>Accordion/list</td><td>Detalhes</td></tr>
+            <tr><td>U20</td><td>Formulario final</td><td>Form (duplicate of U4-U7)</td><td>CTA Final</td></tr>
+            <tr><td>U21</td><td>Headline de urgencia final</td><td>Text (H2)</td><td>CTA Final</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================== 7. BREADBOARD WIRING ==================== -->
+    <section class="section">
+      <span class="section__label">07 / Wiring</span>
+      <h2 class="section__title">Breadboard — Wiring</h2>
+      <p class="section__subtitle">Fluxo de conexao entre secoes e affordances da pagina.</p>
+
+      <div class="wiring-diagram">
+        <div class="wiring-flow">
+
+          <div class="wiring-section">
+            <span class="wiring-section__name">Hero</span>
+            <div class="wiring-section__items">
+              <span class="wiring-node">U1 H1</span>
+              <span class="wiring-node">U2 Sub</span>
+              <span class="wiring-node">U3 Badge</span>
+              <span class="wiring-node">U8 Img</span>
+            </div>
+            <div class="wiring-section__items">
+              <span class="wiring-node">U4 Nome</span>
+              <span class="wiring-node">U5 Email</span>
+              <span class="wiring-node">U6 WhatsApp</span>
+              <span class="wiring-node">U7 CTA</span>
+            </div>
+            <div class="wiring-submit">
+              <span class="wiring-submit__label">submit &rarr;</span>
+              <span class="wiring-submit__target">N1 Lead Capture</span>
+            </div>
+          </div>
+
+          <span class="wiring-arrow">&darr;</span>
+
+          <div class="wiring-section">
+            <span class="wiring-section__name">O Que Vai Construir</span>
+            <div class="wiring-section__items">
+              <span class="wiring-node">U9 Cards x4</span>
+              <span class="wiring-node">U10 Timeline</span>
+            </div>
+          </div>
+
+          <span class="wiring-arrow">&darr;</span>
+
+          <div class="wiring-section">
+            <span class="wiring-section__name">Dois Caminhos</span>
+            <div class="wiring-section__items">
+              <span class="wiring-node">U11 Rejeitado</span>
+              <span class="wiring-node">U12 Potencializado</span>
+            </div>
+            <div class="wiring-section__items">
+              <span class="wiring-node">U13 Human First</span>
+            </div>
+          </div>
+
+          <span class="wiring-arrow">&darr;</span>
+
+          <div class="wiring-section">
+            <span class="wiring-section__name">Beneficios</span>
+            <div class="wiring-section__items">
+              <span class="wiring-node">U14 Grid 6 cards</span>
+              <span class="wiring-node">U15 Stats: 1500+ / R$32M</span>
+            </div>
+          </div>
+
+          <span class="wiring-arrow">&darr;</span>
+
+          <div class="wiring-section">
+            <span class="wiring-section__name">Autoridade</span>
+            <div class="wiring-section__items">
+              <span class="wiring-node">U16 Foto</span>
+              <span class="wiring-node">U17 Badge NNg</span>
+              <span class="wiring-node">U18 Credenciais</span>
+            </div>
+          </div>
+
+          <span class="wiring-arrow">&darr;</span>
+
+          <div class="wiring-section">
+            <span class="wiring-section__name">CTA Final</span>
+            <div class="wiring-section__items">
+              <span class="wiring-node">U21 Urgencia</span>
+              <span class="wiring-node">U20 Form</span>
+            </div>
+            <div class="wiring-submit">
+              <span class="wiring-submit__label">submit &rarr;</span>
+              <span class="wiring-submit__target">N1 Lead Capture</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. NON-UI AFFORDANCES ==================== -->
+    <section class="section">
+      <span class="section__label">08 / Non-UI</span>
+      <h2 class="section__title">Non-UI Affordances</h2>
+
+      <table class="afford-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Affordance</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>N1</td><td>Lead capture endpoint</td><td>Form submission handler</td></tr>
+          <tr><td>N2</td><td>Validacao HTML5</td><td>Input validation (required, type)</td></tr>
+          <tr><td>N3</td><td>Google Fonts loader</td><td>External resource</td></tr>
+          <tr><td>N4</td><td>CSS animations engine</td><td>Keyframes + transitions</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ==================== 9. SLICES ==================== -->
+    <section class="section">
+      <span class="section__label">09 / Slices</span>
+      <h2 class="section__title">Slices (para implementacao)</h2>
+      <p class="section__subtitle">5 fatias verticais de entrega, cada uma demonstravel de forma independente.</p>
+
+      <div class="slices-grid">
+        <div class="slice-card">
+          <span class="slice-card__id">V1</span>
+          <div class="slice-card__body">
+            <span class="slice-card__name">CSS Foundation</span>
+            <span class="slice-card__desc">Design tokens, reset, tipografia, animacoes base</span>
+          </div>
+          <span class="slice-card__demo">Pagina dark com tipografia correta</span>
+        </div>
+
+        <div class="slice-card">
+          <span class="slice-card__id">V2</span>
+          <div class="slice-card__body">
+            <span class="slice-card__name">Hero + Form</span>
+            <span class="slice-card__desc">Hero section completa com formulario funcional</span>
+          </div>
+          <span class="slice-card__demo">Formulario captura acima da dobra</span>
+        </div>
+
+        <div class="slice-card">
+          <span class="slice-card__id">V3</span>
+          <div class="slice-card__body">
+            <span class="slice-card__name">Conteudo Secoes</span>
+            <span class="slice-card__desc">Todas as secoes de conteudo (Construir, Caminhos, Beneficios, Autoridade, Detalhes)</span>
+          </div>
+          <span class="slice-card__demo">Scroll completo da pagina</span>
+        </div>
+
+        <div class="slice-card">
+          <span class="slice-card__id">V4</span>
+          <div class="slice-card__body">
+            <span class="slice-card__name">CTA Final + Footer</span>
+            <span class="slice-card__desc">Formulario duplicado + footer</span>
+          </div>
+          <span class="slice-card__demo">Pagina completa ponta a ponta</span>
+        </div>
+
+        <div class="slice-card">
+          <span class="slice-card__id">V5</span>
+          <div class="slice-card__body">
+            <span class="slice-card__name">Polish</span>
+            <span class="slice-card__desc">Responsividade, animacoes refinadas, acessibilidade</span>
+          </div>
+          <span class="slice-card__demo">Experiencia final desktop e mobile</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="page-footer">
+      <p class="page-footer__text">Documento gerado seguindo a metodologia Shape Up, adaptada para trabalho com LLM via /shaping skill.<br>Agente: UX Designer | Orquestrador: Claude Opus 4.6</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
